@@ -9,7 +9,7 @@
     "build": "nuxt-ts build",
     "start": " nuxt-ts start",
     "generate": "nuxt-ts generate",
-    "test:lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore app/",
+    "test:lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore --ignore-path app/config/* app/",
     "test:unit": "cross-env BABEL_ENV=test jest --coverage",
     "test": "npm run test:lint"
   },
@@ -45,7 +45,7 @@
     "@commitlint/cli": "^9.0.1",
     "@commitlint/config-conventional": "^9.0.1",
     "@nuxt/typescript-build": "^1.0.3",
-    "@nuxtjs/tailwindcss": "^2.0.0",
+    "@nuxtjs/tailwindcss": "^5.0.0-4",
     "@types/jest": "^26.0.3",
     "@types/node": "^14.0.14",
     "@typescript-eslint/eslint-plugin": "^3.5.0",
