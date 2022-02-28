@@ -3,7 +3,6 @@
     <div class="header__logo">
       <nuxt-link to="/" class="flex items-center gap-2">
         <img class="h-14" :src="logo" alt="Logo" />
-        <div style="font-family: Verdana" class="text-main">Øldrankeren</div>
       </nuxt-link>
     </div>
 
