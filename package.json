@@ -16,7 +16,7 @@
   "config": {
     "nuxt": {
       "host": "0.0.0.0",
-      "port": "3000"
+      "port": "3010"
     }
   },
   "browserslist": [
@@ -44,13 +44,15 @@
     "@babel/runtime-corejs2": "^7.10.4",
     "@commitlint/cli": "^9.0.1",
     "@commitlint/config-conventional": "^9.0.1",
+    "@nuxt/postcss8": "^1.1.3",
     "@nuxt/typescript-build": "^1.0.3",
-    "@nuxtjs/tailwindcss": "^5.0.0-4",
+    "@tailwindcss/typography": "^0.5.2",
     "@types/jest": "^26.0.3",
     "@types/node": "^14.0.14",
     "@typescript-eslint/eslint-plugin": "^3.5.0",
     "@typescript-eslint/parser": "^3.5.0",
     "@vue/test-utils": "^1.0.3",
+    "autoprefixer": "^10.4.2",
     "babel-eslint": "^10.1.0",
     "core-js": "2.6.9",
     "cross-env": "^7.0.2",
@@ -68,8 +70,10 @@
     "jest-serializer-vue": "^2.0.2",
     "jest-static-stubs": "0.0.1",
     "node-sass": "^4.14.1",
+    "postcss": "^8.4.7",
     "prettier": "^2.0.5",
     "sass-loader": "^9.0.1",
+    "tailwindcss": "^3.0.23",
     "ts-jest": "^26.1.1",
     "vue-jest": "^3.0.6"
   }

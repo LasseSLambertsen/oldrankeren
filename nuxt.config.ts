@@ -137,7 +137,7 @@ const nuxtConfig: Configuration = {
       },
     ],
     '@nuxtjs/eslint-module',
-    '@nuxtjs/tailwindcss',
+    '@nuxt/postcss8',
   ],
 
   build: {
@@ -157,6 +157,13 @@ const nuxtConfig: Configuration = {
         useShortDoctype: true,
       },
     },
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
+
 
     publicPath: process.env.npm_lifecycle_event === 'generate' ? '/pwa/' : '/_nuxt/',
 

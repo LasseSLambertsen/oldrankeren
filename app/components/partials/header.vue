@@ -3,12 +3,12 @@
     <div class="header__logo">
       <nuxt-link to="/" class="flex items-center gap-2">
         <img class="h-14" :src="logo" alt="Logo" />
-        <div style="font-family: Verdana">Øldrankeren</div>
+        <div style="font-family: Verdana" class="text-main">Øldrankeren</div>
       </nuxt-link>
     </div>
 
     <nav class="nav ml-auto">
-      <ul class="flex flex-row items-center md:mr-4 lg:mr-8">
+      <ul class="flex flex-row items-center text-main md:mr-4 lg:mr-8">
         <li>
           <nuxt-link to="/blog" class="block font-medium px-4 py-1 md:p-2 lg:px-4">
             Blog
