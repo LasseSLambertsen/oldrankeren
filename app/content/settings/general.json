@@ -2,8 +2,9 @@
   "title": "Øldrankeren",
   "titleTemplate": "| En verden af øloplevelser",
   "welcomeText": "# Velkommen til en verden af øloplevelser",
-  "logo": "/images/uploads/cropped.png",
-  "icon": "/images/uploads/cropped.png",
+  "welcomeImage": "/images/uploads/welcome.jpg",
+  "logo": "/images/uploads/cropped_logo.png",
+  "icon": "/images/uploads/cropped_logo.png",
   "loadingColor": "#15334d",
   "seoDescription": "",
   "seoMetaImage": ""
