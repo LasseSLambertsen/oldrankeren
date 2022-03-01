@@ -1,3 +1,5 @@
+const settings = require('./app/content/settings/general.json');
+
 module.exports = {
   content: [
     "./app/components/**/*.{js,vue,ts}",
@@ -9,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        main : '#15334d'
+        main : settings.mainColor
       }
     }
   },

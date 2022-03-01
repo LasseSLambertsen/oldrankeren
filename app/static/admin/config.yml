@@ -25,7 +25,7 @@ collections:
           - { label: 'Welcome Text', name: welcomeText, widget: markdown }
           - { label: Logo, name: logo, widget: image }
           - { label: Icon, name: icon, widget: image }
-          - { label: 'Loading Color', name: loadingColor, widget: string, default: '#000000' }
+          - { label: 'Main Color', name: mainColor, widget: string, default: '#000000' }
           - { label: 'SEO Description', name: seoDescription, widget: text, required: false }
           - { label: 'SEO Meta Image', name: seoMetaImage, widget: image, required: false }
       - label: Manifest
