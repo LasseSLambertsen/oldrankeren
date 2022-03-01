@@ -27,7 +27,7 @@ export default class Home extends Vue {
   welcomeImage = settings.welcomeImage;
 
   get posts(): Post[] {
-    return this.$store.state.posts;
+    return this.$store.state.hops;
   }
 }
 </script>

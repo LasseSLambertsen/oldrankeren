@@ -6,7 +6,7 @@ import { getContent } from '@/utils';
 export interface State {
   perPage: number;
   pages: Page[];
-  posts: Post[];
+  hops: Post[];
   route?: Route;
 }
 
@@ -14,30 +14,30 @@ export interface State {
 export const appState = {
   perPage: 4,
   pages: [],
-  posts: [],
+  hops: [],
 };
 
 export const mutations: MutationTree<State> = {
   SET_PAGES: (state, payload: Record<string, unknown>): void => {
     Vue.set(state, 'pages', payload);
   },
-  SET_POSTS: (state, payload: Record<string, unknown>): void => {
-    Vue.set(state, 'posts', payload);
+  SET_HOPS: (state, payload: Record<string, unknown>): void => {
+    Vue.set(state, 'hops', payload);
   },
 };
 
 interface Actions<S, R> extends ActionTree<S, R> {
   GET_PAGES_LIST(context: ActionContext<S, R>): Promise<void | Error>;
-  GET_POSTS_LIST(context: ActionContext<S, R>): Promise<void | Error>;
+  GET_HOPS_LIST(context: ActionContext<S, R>): Promise<void | Error>;
   nuxtServerInit(context: ActionContext<S, R>): void;
 }
 
 export const actions: Actions<State, State> = {
-  async GET_POSTS_LIST({ commit }): Promise<void | Error> {
+  async GET_HOPS_LIST({ commit }): Promise<void | Error> {
     // Use webpack to search the blog directory matching .json files
-    const context = await require.context('@/content/blog/', false, /\.json$/);
-    const posts = await getContent({ context, prefix: 'blog' });
-    commit('SET_POSTS', posts);
+    const context = await require.context('@/content/hops/', false, /\.json$/);
+    const hops = await getContent({ context, prefix: 'hops' });
+    commit('SET_HOPS', hops);
   },
 
   async GET_PAGES_LIST({ commit }): Promise<void | Error> {
@@ -51,7 +51,7 @@ export const actions: Actions<State, State> = {
   },
 
   async nuxtServerInit({ dispatch }): Promise<void> {
-    await Promise.all([dispatch('GET_PAGES_LIST'), dispatch('GET_POSTS_LIST')]);
+    await Promise.all([dispatch('GET_PAGES_LIST'), dispatch('GET_HOPS_LIST')]);
   },
 };
 
