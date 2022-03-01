@@ -31,12 +31,6 @@ const nuxtConfig: Configuration = {
       },
     ],
     script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js', defer: true }],
-    link: [
-      {
-        rel: 'preconnect',
-        href: 'https://d33wubrfki0l68.cloudfront.net',
-      },
-    ],
   },
 
   srcDir: 'app/',
@@ -91,16 +85,6 @@ const nuxtConfig: Configuration = {
     // Enable some language-neutral replacement + quotes beautification
     typographer: true,
   },
-
-  workbox: {
-    runtimeCaching: [
-      {
-        urlPattern: 'https://d33wubrfki0l68.cloudfront.net/.*',
-        handler: 'cacheFirst',
-      },
-    ],
-  },
-
   pwa: {
     icon: {
       iconSrc: `app/static${settings.icon}`,
